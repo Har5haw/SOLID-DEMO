@@ -6,13 +6,11 @@ import java.util.ArrayList;
 public abstract class Vehicle {
     private String name;
     private double price;
-    private DataRepository dataRepository;
     private ArrayList<String> additional;
 
     public Vehicle(String name, double price) {
         this.name = name;
         this.price = price;
-        this.dataRepository = RepositoryDriver.getDataRepository();
         additional = new ArrayList<>();
     }
 
