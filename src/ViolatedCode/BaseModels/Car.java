@@ -16,4 +16,6 @@ public class Car extends Vehicle{
     public void setRefrigerator() {
         this.addAdditional("Refrigerator");
     }
+
+
 }

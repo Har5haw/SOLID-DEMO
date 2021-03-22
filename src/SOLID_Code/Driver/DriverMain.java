@@ -1,6 +1,7 @@
 package SOLID_Code.Driver;
 
 import SOLID_Code.BaseModels.*;
+import SOLID_Code.Repository.DataRepository;
 import SOLID_Code.VehicleModels.FourWheelVehicle;
 import SOLID_Code.VehicleModels.TwoWheelVehicle;
 
@@ -19,6 +20,11 @@ public class DriverMain {
 
         bike.setNoisySilencer();
         bike.setLuggageBox();
+
+        DataRepository dataRepository = RepositoryDriver.getDataRepository();
+        dataRepository.placeOrder(car);
+        dataRepository.placeOrder(lorry);
+        dataRepository.placeOrder(bike);
 
         car.order();
         lorry.order();

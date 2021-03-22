@@ -32,10 +32,6 @@ public abstract class Vehicle {
         this.price = price;
     }
 
-    public void order(){
-        dataRepository.placeOrder(this);
-    }
-
     public ArrayList<String> getAdditional() {
         return additional;
     }

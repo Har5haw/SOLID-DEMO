@@ -41,8 +41,9 @@ public abstract class Vehicle {
         return additional;
     }
 
-
-
+    public void printDataBase(){
+        RepositoryDriver repositoryDriver = new RepositoryDriver();
+    }
 
     public void addAdditional(String additional) {
         if(!this.additional.contains(additional)){
