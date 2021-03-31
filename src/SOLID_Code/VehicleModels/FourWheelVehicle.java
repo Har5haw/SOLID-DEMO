@@ -6,7 +6,7 @@ import SOLID_Code.VehicleTypes.FourWheeler;
 
 public abstract class FourWheelVehicle extends Vehicle implements FourWheeler, FourWheelerAdditional {
 
-    private String fourWheelerPolicies;
+    private final String fourWheelerPolicies;
 
     public FourWheelVehicle(String name, double price) {
         super(name, price);

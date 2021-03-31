@@ -26,10 +26,6 @@ public class DriverMain {
         dataRepository.placeOrder(lorry);
         dataRepository.placeOrder(bike);
 
-        car.order();
-        lorry.order();
-        bike.order();
-
 
 
         System.out.println("\n\n----------database records-----------\n\n");

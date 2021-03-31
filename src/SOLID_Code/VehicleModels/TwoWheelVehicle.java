@@ -6,7 +6,7 @@ import SOLID_Code.VehicleTypes.TwoWheeler;
 
 public abstract class TwoWheelVehicle extends Vehicle implements TwoWheeler, TwoWheelerAdditional {
 
-    private String twoWheelerPolicies;
+    private final String twoWheelerPolicies;
     public TwoWheelVehicle(String name, double price) {
         super(name, price);
         twoWheelerPolicies = "These are two wheeler policies";

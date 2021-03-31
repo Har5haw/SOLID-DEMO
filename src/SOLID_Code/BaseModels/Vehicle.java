@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public abstract class Vehicle {
     private String name;
     private double price;
-    private ArrayList<String> additional;
+    private final ArrayList<String> additional;
 
     public Vehicle(String name, double price) {
         this.name = name;

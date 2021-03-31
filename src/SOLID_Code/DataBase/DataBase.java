@@ -5,7 +5,7 @@ import SOLID_Code.BaseModels.Vehicle;
 import java.util.ArrayList;
 
 public class DataBase {
-    private ArrayList<Vehicle> vehicleArrayList;
+    private final ArrayList<Vehicle> vehicleArrayList;
     public DataBase(){
         vehicleArrayList = new ArrayList<>();
     }
@@ -18,7 +18,7 @@ public class DataBase {
 
     @Override
     public String toString() {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuffer = new StringBuilder();
         for(Vehicle vehicle : vehicleArrayList){
             stringBuffer.append("Name: ");
             stringBuffer.append(vehicle.getName());

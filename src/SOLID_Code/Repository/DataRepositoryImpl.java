@@ -5,7 +5,7 @@ import SOLID_Code.DataBase.DataBase;
 
 public class DataRepositoryImpl implements DataRepository{
 
-    private DataBase dataBase;
+    private final DataBase dataBase;
 
     public DataRepositoryImpl(){
         dataBase = new DataBase();
